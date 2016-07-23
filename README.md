@@ -53,8 +53,16 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 
 ##Related GitHub Projects / Credits
 
+###pgoapi-swift by Luke Sapan
+######https://github.com/lsapan/pgoapi-swift
+
+###pgoapi by tejado
+######https://github.com/tejado/pgoapi
+
+###POGOProtos by AeonLucid
+######https://github.com/AeonLucid/POGOProtos
+
 ###Example Swift Apps by Mark Hamilton, Dryverless
-Collection of example applications written in Swift / Objective-C for iOS 9.x (developed under 9.2.1 SDK - will be migrated to 9.3 when released)
 ######https://github.com/TheDarkCode/Example-Swift-Apps
 
 ###AngularAzureSearch by Mark Hamilton, Dryverless
