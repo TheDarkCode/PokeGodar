@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182961D5F04F74B132098BE4 /* Pods_PokeGodarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E9A40F22560BF24388B712 /* Pods_PokeGodarUITests.framework */; };
+		4739B6EEF9A634D80469B05C /* Pods_PokeGodarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4544A14D6664BA4D0CFC78 /* Pods_PokeGodarTests.framework */; };
 		4D3D77C31D423BD800726598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D77C21D423BD800726598 /* AppDelegate.swift */; };
 		4D3D77C51D423BD800726598 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D77C41D423BD800726598 /* FirstViewController.swift */; };
 		4D3D77C71D423BD800726598 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D77C61D423BD800726598 /* SecondViewController.swift */; };
@@ -23,6 +25,34 @@
 		4D3D78021D423D1700726598 /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D78011D423D1700726598 /* PokemonCell.swift */; };
 		4D3D78041D423D6E00726598 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D78031D423D6E00726598 /* Pokemon.swift */; };
 		4D3D78061D423EB600726598 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D78051D423EB600726598 /* GlobalVariables.swift */; };
+		4D406CC91D434D4800057F6E /* Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CB61D434D4800057F6E /* Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift */; };
+		4D406CCA1D434D4800057F6E /* Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CB71D434D4800057F6E /* Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift */; };
+		4D406CCB1D434D4800057F6E /* Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CB81D434D4800057F6E /* Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift */; };
+		4D406CCC1D434D4800057F6E /* Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CB91D434D4800057F6E /* Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift */; };
+		4D406CCD1D434D4800057F6E /* Pogoprotos.Data.PogoprotosData.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CBA1D434D4800057F6E /* Pogoprotos.Data.PogoprotosData.proto.swift */; };
+		4D406CCE1D434D4800057F6E /* Pogoprotos.Enums.PogoprotosEnums.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CBB1D434D4800057F6E /* Pogoprotos.Enums.PogoprotosEnums.proto.swift */; };
+		4D406CCF1D434D4800057F6E /* Pogoprotos.Inventory.PogoprotosInventory.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CBC1D434D4800057F6E /* Pogoprotos.Inventory.PogoprotosInventory.proto.swift */; };
+		4D406CD01D434D4800057F6E /* Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CBD1D434D4800057F6E /* Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift */; };
+		4D406CD11D434D4800057F6E /* Pogoprotos.Map.PogoprotosMap.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CBE1D434D4800057F6E /* Pogoprotos.Map.PogoprotosMap.proto.swift */; };
+		4D406CD21D434D4800057F6E /* Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CBF1D434D4800057F6E /* Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift */; };
+		4D406CD31D434D4800057F6E /* Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CC01D434D4800057F6E /* Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift */; };
+		4D406CD41D434D4800057F6E /* Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CC11D434D4800057F6E /* Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift */; };
+		4D406CD51D434D4800057F6E /* Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CC21D434D4800057F6E /* Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift */; };
+		4D406CD61D434D4800057F6E /* Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CC31D434D4800057F6E /* Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift */; };
+		4D406CD71D434D4800057F6E /* Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CC41D434D4800057F6E /* Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift */; };
+		4D406CD81D434D4800057F6E /* Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CC51D434D4800057F6E /* Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift */; };
+		4D406CD91D434D4800057F6E /* Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CC61D434D4800057F6E /* Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift */; };
+		4D406CDA1D434D4800057F6E /* Pogoprotos.Settings.PogoprotosSettings.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CC71D434D4800057F6E /* Pogoprotos.Settings.PogoprotosSettings.proto.swift */; };
+		4D406CDB1D434D4800057F6E /* Pogoprotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CC81D434D4800057F6E /* Pogoprotos.swift */; };
+		4D406CE41D434D6A00057F6E /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CDD1D434D6A00057F6E /* Auth.swift */; };
+		4D406CE51D434D6A00057F6E /* AuthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CDE1D434D6A00057F6E /* AuthDelegate.swift */; };
+		4D406CE61D434D6A00057F6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CDF1D434D6A00057F6E /* Extensions.swift */; };
+		4D406CE71D434D6A00057F6E /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CE01D434D6A00057F6E /* Globals.swift */; };
+		4D406CE81D434D6A00057F6E /* PGoApiDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CE11D434D6A00057F6E /* PGoApiDelegate.swift */; };
+		4D406CE91D434D6A00057F6E /* PGoApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CE21D434D6A00057F6E /* PGoApiRequest.swift */; };
+		4D406CEA1D434D6A00057F6E /* RpcApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CE31D434D6A00057F6E /* RpcApi.swift */; };
+		4D406CED1D434FFB00057F6E /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D406CEC1D434FFB00057F6E /* DataExtensions.swift */; };
+		D489B7C1A80456B4C8980527 /* Pods_PokeGodar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1823A1485483549CD080705E /* Pods_PokeGodar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +73,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1823A1485483549CD080705E /* Pods_PokeGodar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeGodar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4544A14D6664BA4D0CFC78 /* Pods_PokeGodarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeGodarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D2FD9A5A13CA20A11981CE /* Pods-PokeGodarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeGodarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokeGodarUITests/Pods-PokeGodarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D3D77BF1D423BD800726598 /* PokeGodar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeGodar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3D77C21D423BD800726598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D3D77C41D423BD800726598 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +98,39 @@
 		4D3D78011D423D1700726598 /* PokemonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
 		4D3D78031D423D6E00726598 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		4D3D78051D423EB600726598 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		4D406CB61D434D4800057F6E /* Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift; sourceTree = "<group>"; };
+		4D406CB71D434D4800057F6E /* Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift; sourceTree = "<group>"; };
+		4D406CB81D434D4800057F6E /* Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift; sourceTree = "<group>"; };
+		4D406CB91D434D4800057F6E /* Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift; sourceTree = "<group>"; };
+		4D406CBA1D434D4800057F6E /* Pogoprotos.Data.PogoprotosData.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.PogoprotosData.proto.swift; sourceTree = "<group>"; };
+		4D406CBB1D434D4800057F6E /* Pogoprotos.Enums.PogoprotosEnums.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Enums.PogoprotosEnums.proto.swift; sourceTree = "<group>"; };
+		4D406CBC1D434D4800057F6E /* Pogoprotos.Inventory.PogoprotosInventory.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Inventory.PogoprotosInventory.proto.swift; sourceTree = "<group>"; };
+		4D406CBD1D434D4800057F6E /* Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift; sourceTree = "<group>"; };
+		4D406CBE1D434D4800057F6E /* Pogoprotos.Map.PogoprotosMap.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Map.PogoprotosMap.proto.swift; sourceTree = "<group>"; };
+		4D406CBF1D434D4800057F6E /* Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift; sourceTree = "<group>"; };
+		4D406CC01D434D4800057F6E /* Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift; sourceTree = "<group>"; };
+		4D406CC11D434D4800057F6E /* Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift; sourceTree = "<group>"; };
+		4D406CC21D434D4800057F6E /* Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift; sourceTree = "<group>"; };
+		4D406CC31D434D4800057F6E /* Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift; sourceTree = "<group>"; };
+		4D406CC41D434D4800057F6E /* Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift; sourceTree = "<group>"; };
+		4D406CC51D434D4800057F6E /* Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift; sourceTree = "<group>"; };
+		4D406CC61D434D4800057F6E /* Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift; sourceTree = "<group>"; };
+		4D406CC71D434D4800057F6E /* Pogoprotos.Settings.PogoprotosSettings.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Settings.PogoprotosSettings.proto.swift; sourceTree = "<group>"; };
+		4D406CC81D434D4800057F6E /* Pogoprotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.swift; sourceTree = "<group>"; };
+		4D406CDD1D434D6A00057F6E /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		4D406CDE1D434D6A00057F6E /* AuthDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDelegate.swift; sourceTree = "<group>"; };
+		4D406CDF1D434D6A00057F6E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4D406CE01D434D6A00057F6E /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		4D406CE11D434D6A00057F6E /* PGoApiDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGoApiDelegate.swift; sourceTree = "<group>"; };
+		4D406CE21D434D6A00057F6E /* PGoApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGoApiRequest.swift; sourceTree = "<group>"; };
+		4D406CE31D434D6A00057F6E /* RpcApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RpcApi.swift; sourceTree = "<group>"; };
+		4D406CEC1D434FFB00057F6E /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		546672511CC5C2FA74BBB3EB /* Pods-PokeGodar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeGodar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokeGodar/Pods-PokeGodar.debug.xcconfig"; sourceTree = "<group>"; };
+		573798643F4D1772FC198B82 /* Pods-PokeGodarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeGodarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokeGodarTests/Pods-PokeGodarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		795E09EDED6C4E34EB6BEF2D /* Pods-PokeGodarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeGodarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokeGodarTests/Pods-PokeGodarTests.release.xcconfig"; sourceTree = "<group>"; };
+		84FF7F85283E8588FE106DC7 /* Pods-PokeGodarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeGodarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokeGodarUITests/Pods-PokeGodarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92E9A40F22560BF24388B712 /* Pods_PokeGodarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeGodarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57C6D349CC951BE5A57DEAB /* Pods-PokeGodar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeGodar.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokeGodar/Pods-PokeGodar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D489B7C1A80456B4C8980527 /* Pods_PokeGodar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4739B6EEF9A634D80469B05C /* Pods_PokeGodarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182961D5F04F74B132098BE4 /* Pods_PokeGodarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +168,8 @@
 				4D3D77D81D423BD800726598 /* PokeGodarTests */,
 				4D3D77E31D423BD800726598 /* PokeGodarUITests */,
 				4D3D77C01D423BD800726598 /* Products */,
+				F4B6F343605346BC7447CF63 /* Pods */,
+				F0D20E8000125197A0EEDD76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +186,9 @@
 		4D3D77C11D423BD800726598 /* PokeGodar */ = {
 			isa = PBXGroup;
 			children = (
+				4D406CEB1D434FEE00057F6E /* Extensions */,
+				4D406CDC1D434D5300057F6E /* PGOAPI */,
+				4D406CB51D434D3E00057F6E /* Protos */,
 				4D3D77F21D423BE200726598 /* Resources */,
 				4D3D77F31D423BEB00726598 /* Utils */,
 				4D3D77F41D423BF000726598 /* Models */,
@@ -192,6 +266,77 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		4D406CB51D434D3E00057F6E /* Protos */ = {
+			isa = PBXGroup;
+			children = (
+				4D406CB61D434D4800057F6E /* Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift */,
+				4D406CB71D434D4800057F6E /* Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift */,
+				4D406CB81D434D4800057F6E /* Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift */,
+				4D406CB91D434D4800057F6E /* Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift */,
+				4D406CBA1D434D4800057F6E /* Pogoprotos.Data.PogoprotosData.proto.swift */,
+				4D406CBB1D434D4800057F6E /* Pogoprotos.Enums.PogoprotosEnums.proto.swift */,
+				4D406CBC1D434D4800057F6E /* Pogoprotos.Inventory.PogoprotosInventory.proto.swift */,
+				4D406CBD1D434D4800057F6E /* Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift */,
+				4D406CBE1D434D4800057F6E /* Pogoprotos.Map.PogoprotosMap.proto.swift */,
+				4D406CBF1D434D4800057F6E /* Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift */,
+				4D406CC01D434D4800057F6E /* Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift */,
+				4D406CC11D434D4800057F6E /* Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift */,
+				4D406CC21D434D4800057F6E /* Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift */,
+				4D406CC31D434D4800057F6E /* Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift */,
+				4D406CC41D434D4800057F6E /* Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift */,
+				4D406CC51D434D4800057F6E /* Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift */,
+				4D406CC61D434D4800057F6E /* Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift */,
+				4D406CC71D434D4800057F6E /* Pogoprotos.Settings.PogoprotosSettings.proto.swift */,
+				4D406CC81D434D4800057F6E /* Pogoprotos.swift */,
+			);
+			name = Protos;
+			sourceTree = "<group>";
+		};
+		4D406CDC1D434D5300057F6E /* PGOAPI */ = {
+			isa = PBXGroup;
+			children = (
+				4D406CDD1D434D6A00057F6E /* Auth.swift */,
+				4D406CDE1D434D6A00057F6E /* AuthDelegate.swift */,
+				4D406CDF1D434D6A00057F6E /* Extensions.swift */,
+				4D406CE01D434D6A00057F6E /* Globals.swift */,
+				4D406CE11D434D6A00057F6E /* PGoApiDelegate.swift */,
+				4D406CE21D434D6A00057F6E /* PGoApiRequest.swift */,
+				4D406CE31D434D6A00057F6E /* RpcApi.swift */,
+			);
+			name = PGOAPI;
+			sourceTree = "<group>";
+		};
+		4D406CEB1D434FEE00057F6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D406CEC1D434FFB00057F6E /* DataExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F0D20E8000125197A0EEDD76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1823A1485483549CD080705E /* Pods_PokeGodar.framework */,
+				1D4544A14D6664BA4D0CFC78 /* Pods_PokeGodarTests.framework */,
+				92E9A40F22560BF24388B712 /* Pods_PokeGodarUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4B6F343605346BC7447CF63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				546672511CC5C2FA74BBB3EB /* Pods-PokeGodar.debug.xcconfig */,
+				E57C6D349CC951BE5A57DEAB /* Pods-PokeGodar.release.xcconfig */,
+				573798643F4D1772FC198B82 /* Pods-PokeGodarTests.debug.xcconfig */,
+				795E09EDED6C4E34EB6BEF2D /* Pods-PokeGodarTests.release.xcconfig */,
+				84FF7F85283E8588FE106DC7 /* Pods-PokeGodarUITests.debug.xcconfig */,
+				49D2FD9A5A13CA20A11981CE /* Pods-PokeGodarUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,9 +344,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D3D77E91D423BD800726598 /* Build configuration list for PBXNativeTarget "PokeGodar" */;
 			buildPhases = (
+				10414374082E71DF31DF47A6 /* [CP] Check Pods Manifest.lock */,
 				4D3D77BB1D423BD700726598 /* Sources */,
 				4D3D77BC1D423BD700726598 /* Frameworks */,
 				4D3D77BD1D423BD700726598 /* Resources */,
+				A7F26314164F1D59BEF2AA8F /* [CP] Embed Pods Frameworks */,
+				38912A6C4C8C5F4CC048DE6C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,9 +364,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D3D77EC1D423BD800726598 /* Build configuration list for PBXNativeTarget "PokeGodarTests" */;
 			buildPhases = (
+				0D150265DF040EBA3E6119B1 /* [CP] Check Pods Manifest.lock */,
 				4D3D77D11D423BD800726598 /* Sources */,
 				4D3D77D21D423BD800726598 /* Frameworks */,
 				4D3D77D31D423BD800726598 /* Resources */,
+				B3465950A6592B07FFC85CBC /* [CP] Embed Pods Frameworks */,
+				E658FFBFC2C122CF451A06F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,9 +385,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D3D77EF1D423BD800726598 /* Build configuration list for PBXNativeTarget "PokeGodarUITests" */;
 			buildPhases = (
+				97E42AFE5FA2783C843D5A5A /* [CP] Check Pods Manifest.lock */,
 				4D3D77DC1D423BD800726598 /* Sources */,
 				4D3D77DD1D423BD800726598 /* Frameworks */,
 				4D3D77DE1D423BD800726598 /* Resources */,
+				E54AD57534EDF55E6993CEAA /* [CP] Embed Pods Frameworks */,
+				CE8CD77A5CEEBB2BC62EB747 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,6 +485,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D150265DF040EBA3E6119B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		10414374082E71DF31DF47A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		38912A6C4C8C5F4CC048DE6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokeGodar/Pods-PokeGodar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97E42AFE5FA2783C843D5A5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A7F26314164F1D59BEF2AA8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokeGodar/Pods-PokeGodar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3465950A6592B07FFC85CBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokeGodarTests/Pods-PokeGodarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8CD77A5CEEBB2BC62EB747 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokeGodarUITests/Pods-PokeGodarUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E54AD57534EDF55E6993CEAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokeGodarUITests/Pods-PokeGodarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E658FFBFC2C122CF451A06F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokeGodarTests/Pods-PokeGodarTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D3D77BB1D423BD700726598 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -338,11 +630,38 @@
 			files = (
 				4D3D78021D423D1700726598 /* PokemonCell.swift in Sources */,
 				4D3D78001D423CB000726598 /* CSV.swift in Sources */,
+				4D406CE81D434D6A00057F6E /* PGoApiDelegate.swift in Sources */,
+				4D406CD21D434D4800057F6E /* Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift in Sources */,
+				4D406CCE1D434D4800057F6E /* Pogoprotos.Enums.PogoprotosEnums.proto.swift in Sources */,
+				4D406CD31D434D4800057F6E /* Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift in Sources */,
+				4D406CCA1D434D4800057F6E /* Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift in Sources */,
+				4D406CC91D434D4800057F6E /* Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift in Sources */,
+				4D406CE61D434D6A00057F6E /* Extensions.swift in Sources */,
+				4D406CE71D434D6A00057F6E /* Globals.swift in Sources */,
+				4D406CD91D434D4800057F6E /* Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift in Sources */,
+				4D406CD11D434D4800057F6E /* Pogoprotos.Map.PogoprotosMap.proto.swift in Sources */,
+				4D406CD61D434D4800057F6E /* Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift in Sources */,
 				4D3D77C71D423BD800726598 /* SecondViewController.swift in Sources */,
 				4D3D77C31D423BD800726598 /* AppDelegate.swift in Sources */,
+				4D406CCB1D434D4800057F6E /* Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift in Sources */,
+				4D406CD41D434D4800057F6E /* Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift in Sources */,
+				4D406CCD1D434D4800057F6E /* Pogoprotos.Data.PogoprotosData.proto.swift in Sources */,
+				4D406CEA1D434D6A00057F6E /* RpcApi.swift in Sources */,
+				4D406CCC1D434D4800057F6E /* Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift in Sources */,
+				4D406CD81D434D4800057F6E /* Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift in Sources */,
+				4D406CE41D434D6A00057F6E /* Auth.swift in Sources */,
+				4D406CD51D434D4800057F6E /* Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift in Sources */,
+				4D406CD01D434D4800057F6E /* Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift in Sources */,
+				4D406CE91D434D6A00057F6E /* PGoApiRequest.swift in Sources */,
 				4D3D78061D423EB600726598 /* GlobalVariables.swift in Sources */,
+				4D406CCF1D434D4800057F6E /* Pogoprotos.Inventory.PogoprotosInventory.proto.swift in Sources */,
+				4D406CED1D434FFB00057F6E /* DataExtensions.swift in Sources */,
+				4D406CD71D434D4800057F6E /* Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift in Sources */,
 				4D3D77C51D423BD800726598 /* FirstViewController.swift in Sources */,
+				4D406CDA1D434D4800057F6E /* Pogoprotos.Settings.PogoprotosSettings.proto.swift in Sources */,
 				4D3D78041D423D6E00726598 /* Pokemon.swift in Sources */,
+				4D406CE51D434D6A00057F6E /* AuthDelegate.swift in Sources */,
+				4D406CDB1D434D4800057F6E /* Pogoprotos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +807,7 @@
 		};
 		4D3D77EA1D423BD800726598 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546672511CC5C2FA74BBB3EB /* Pods-PokeGodar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PokeGodar/Info.plist;
@@ -500,6 +820,7 @@
 		};
 		4D3D77EB1D423BD800726598 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E57C6D349CC951BE5A57DEAB /* Pods-PokeGodar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PokeGodar/Info.plist;
@@ -512,6 +833,7 @@
 		};
 		4D3D77ED1D423BD800726598 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 573798643F4D1772FC198B82 /* Pods-PokeGodarTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PokeGodarTests/Info.plist;
@@ -525,6 +847,7 @@
 		};
 		4D3D77EE1D423BD800726598 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795E09EDED6C4E34EB6BEF2D /* Pods-PokeGodarTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PokeGodarTests/Info.plist;
@@ -538,6 +861,7 @@
 		};
 		4D3D77F01D423BD800726598 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84FF7F85283E8588FE106DC7 /* Pods-PokeGodarUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PokeGodarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -550,6 +874,7 @@
 		};
 		4D3D77F11D423BD800726598 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D2FD9A5A13CA20A11981CE /* Pods-PokeGodarUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PokeGodarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -579,6 +904,7 @@
 				4D3D77EB1D423BD800726598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D3D77EC1D423BD800726598 /* Build configuration list for PBXNativeTarget "PokeGodarTests" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +913,7 @@
 				4D3D77EE1D423BD800726598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D3D77EF1D423BD800726598 /* Build configuration list for PBXNativeTarget "PokeGodarUITests" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +922,7 @@
 				4D3D77F11D423BD800726598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

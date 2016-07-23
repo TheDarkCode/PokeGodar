@@ -1,0 +1,21 @@
+# Uncomment this line to define a global platform for your project
+ platform :ios, ’10.0’
+# Uncomment this line if you're using Swift
+ use_frameworks!
+
+target 'PokeGodar' do
+
+pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire', :branch => 'swift3'
+
+pod 'ProtocolBuffers-Swift', :git => 'https://github.com/alexeyxo/protobuf-swift', :branch => 'ProtoBuf3.0-Swift3.0'
+
+end
+
+target 'PokeGodarTests' do
+
+end
+
+target 'PokeGodarUITests' do
+
+end
+
