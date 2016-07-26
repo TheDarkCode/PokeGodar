@@ -122,6 +122,8 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
   - 3) Commit your changes: ```git commit -am 'Adding some super awesome update'```
   - 4) Push to the branch: ```git push origin Your-New-Feature```
   - 5) Submit a pull request!
+  
+####Alternatively, if you want to buy coffee to get more done, you can do so here: https://www.paypal.me/dryverless
 
 ## License
 Copyright (c) 2016 Mark Hamilton / dryverless (http://www.dryverless.com)
