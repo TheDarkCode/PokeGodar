@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.UI;
 
 namespace PokeGodar.WebAPI.Helpers
@@ -99,5 +95,33 @@ namespace PokeGodar.WebAPI.Helpers
 
             return stringWriter.ToString();
         }
+
+        private static readonly Random _random = new Random();
+        /// <summary>
+        /// Get Random UInt64
+        /// </summary>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns>Random UInt64 between min and max.</returns>
+        public static long GetLongRandom(long min, long max)
+        {
+            var buf = new byte[8];
+            _random.NextBytes(buf);
+            var longRand = BitConverter.ToInt64(buf, 0);
+
+            return Math.Abs(longRand % (max - min)) + min;
+        }
+
+        /// <summary>
+        /// Convert Float to Unsigned Int64
+        /// </summary>
+        /// <param name="double"></param>
+        /// <returns>Unsigned Int64</returns>
+        public static ulong FloatAsUlong(double value)
+        {
+            var bytes = BitConverter.GetBytes(value);
+            return BitConverter.ToUInt64(bytes, 0);
+        }
+
     }
 }

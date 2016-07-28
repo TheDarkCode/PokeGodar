@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PokeGodar.WebAPI.PartitionResolvers
+﻿namespace PokeGodar.WebAPI.PartitionResolvers
 {
     /// <summary>
     /// Specifies how to handle requests to partitions in transition.

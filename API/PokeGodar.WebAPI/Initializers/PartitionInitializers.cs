@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
 using Microsoft.Azure.Documents.Partitioning;
-using PokeGodar.WebAPI.Models;
 using PokeGodar.WebAPI.Helpers;
 using PokeGodar.WebAPI.PartitionResolvers;
 
