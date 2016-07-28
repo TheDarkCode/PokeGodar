@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D86469B1D475ACB00B14C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86469A1D475ACB00B14C0C /* AppDelegate.swift */; };
+		4D86469D1D475ACB00B14C0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86469C1D475ACB00B14C0C /* ViewController.swift */; };
+		4D8646A01D475ACB00B14C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D86469E1D475ACB00B14C0C /* Main.storyboard */; };
+		4D8646A31D475ACB00B14C0C /* pgoapi_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D8646A11D475ACB00B14C0C /* pgoapi_demo.xcdatamodeld */; };
+		4D8646A51D475ACB00B14C0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8646A41D475ACB00B14C0C /* Assets.xcassets */; };
+		4D8646A81D475ACB00B14C0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8646A61D475ACB00B14C0C /* LaunchScreen.storyboard */; };
+		4D8646B31D475ACB00B14C0C /* pgoapi_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8646B21D475ACB00B14C0C /* pgoapi_demoTests.swift */; };
+		4D8646BE1D475ACB00B14C0C /* pgoapi_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8646BD1D475ACB00B14C0C /* pgoapi_demoUITests.swift */; };
+		4D8646F31D475D7200B14C0C /* Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B0A1D4176A600AAF7E0 /* Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift */; };
+		4D8646F41D475D7200B14C0C /* Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B0B1D4176A600AAF7E0 /* Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift */; };
+		4D8646F51D475D7200B14C0C /* Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B0C1D4176A600AAF7E0 /* Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift */; };
+		4D8646F61D475D7200B14C0C /* Pogoprotos.Data.Logs.PogoprotosDataLogs.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C863D91D452127009888D6 /* Pogoprotos.Data.Logs.PogoprotosDataLogs.proto.swift */; };
+		4D8646F71D475D7200B14C0C /* Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B0D1D4176A600AAF7E0 /* Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift */; };
+		4D8646F81D475D7200B14C0C /* Pogoprotos.Data.PogoprotosData.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B0E1D4176A600AAF7E0 /* Pogoprotos.Data.PogoprotosData.proto.swift */; };
+		4D8646F91D475D7200B14C0C /* Pogoprotos.Enums.PogoprotosEnums.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B0F1D4176A600AAF7E0 /* Pogoprotos.Enums.PogoprotosEnums.proto.swift */; };
+		4D8646FA1D475D7200B14C0C /* Pogoprotos.Inventory.Item.PogoprotosInventoryItem.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C863D71D4520CB009888D6 /* Pogoprotos.Inventory.Item.PogoprotosInventoryItem.proto.swift */; };
+		4D8646FB1D475D7200B14C0C /* Pogoprotos.Inventory.PogoprotosInventory.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B101D4176A600AAF7E0 /* Pogoprotos.Inventory.PogoprotosInventory.proto.swift */; };
+		4D8646FC1D475D7200B14C0C /* Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B111D4176A600AAF7E0 /* Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift */; };
+		4D8646FD1D475D7200B14C0C /* Pogoprotos.Map.PogoprotosMap.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B121D4176A600AAF7E0 /* Pogoprotos.Map.PogoprotosMap.proto.swift */; };
+		4D8646FE1D475D7200B14C0C /* Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B131D4176A600AAF7E0 /* Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift */; };
+		4D8646FF1D475D7200B14C0C /* Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B141D4176A600AAF7E0 /* Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift */; };
+		4D8647001D475D7200B14C0C /* Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B151D4176A600AAF7E0 /* Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift */; };
+		4D8647011D475D7200B14C0C /* Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B161D4176A600AAF7E0 /* Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift */; };
+		4D8647021D475D7200B14C0C /* Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B171D4176A600AAF7E0 /* Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift */; };
+		4D8647031D475D7200B14C0C /* Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B181D4176A600AAF7E0 /* Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift */; };
+		4D8647041D475D7200B14C0C /* Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B191D4176A600AAF7E0 /* Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift */; };
+		4D8647051D475D7200B14C0C /* Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B1A1D4176A600AAF7E0 /* Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift */; };
+		4D8647061D475D7200B14C0C /* Pogoprotos.Settings.PogoprotosSettings.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B1B1D4176A600AAF7E0 /* Pogoprotos.Settings.PogoprotosSettings.proto.swift */; };
+		4D8647071D475D7200B14C0C /* Pogoprotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B1C1D4176A600AAF7E0 /* Pogoprotos.swift */; };
+		4D8647081D475D7B00B14C0C /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316AFB1D41768600AAF7E0 /* Auth.swift */; };
+		4D8647091D475D7B00B14C0C /* AuthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316AFC1D41768600AAF7E0 /* AuthDelegate.swift */; };
+		4D86470A1D475D7B00B14C0C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316AFD1D41768600AAF7E0 /* Extensions.swift */; };
+		4D86470B1D475D7B00B14C0C /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316AFE1D41768600AAF7E0 /* Globals.swift */; };
+		4D86470C1D475D7B00B14C0C /* PGoApiDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316AFF1D41768600AAF7E0 /* PGoApiDelegate.swift */; };
+		4D86470D1D475D7B00B14C0C /* PGoApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B001D41768600AAF7E0 /* PGoApiRequest.swift */; };
+		4D86470E1D475D7B00B14C0C /* RpcApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3316B011D41768600AAF7E0 /* RpcApi.swift */; };
+		4D86470F1D475D7B00B14C0C /* S2Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C863D51D43D5C0009888D6 /* S2Geometry.swift */; };
+		4D8647101D475D7B00B14C0C /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B131A1D417B7000C5A2A0 /* ExampleViewController.swift */; };
+		4D8647151D4769AB00B14C0C /* libs2geometry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8647111D4762A500B14C0C /* libs2geometry.a */; };
+		4D86471C1D476EDF00B14C0C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D86471B1D476EDF00B14C0C /* libc++.tbd */; };
+		4D86471E1D47719C00B14C0C /* libgcc_s.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D86471D1D47719C00B14C0C /* libgcc_s.1.tbd */; };
+		D35FD924532DF9B0FE42928F /* Pods_pgoapi_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42301C7BF0412DA9C6C17D82 /* Pods_pgoapi_demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D8646AF1D475ACB00B14C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E5B6981D4174FB005DA98B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D8646971D475ACB00B14C0C;
+			remoteInfo = "pgoapi-demo";
+		};
+		4D8646BA1D475ACB00B14C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E5B6981D4174FB005DA98B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D8646971D475ACB00B14C0C;
+			remoteInfo = "pgoapi-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1605415E38D3A2E3BBB9983E /* Pods_pgoapi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pgoapi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42301C7BF0412DA9C6C17D82 /* Pods_pgoapi_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pgoapi_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4906714F23B56051ED48064F /* Pods-pgoapi-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pgoapi-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-pgoapi-demo/Pods-pgoapi-demo.release.xcconfig"; sourceTree = "<group>"; };
+		4D8646981D475ACB00B14C0C /* pgoapi-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pgoapi-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D86469A1D475ACB00B14C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D86469C1D475ACB00B14C0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D86469F1D475ACB00B14C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D8646A21D475ACB00B14C0C /* pgoapi_demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pgoapi_demo.xcdatamodel; sourceTree = "<group>"; };
+		4D8646A41D475ACB00B14C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D8646A71D475ACB00B14C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D8646A91D475ACB00B14C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D8646AE1D475ACB00B14C0C /* pgoapi-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pgoapi-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8646B21D475ACB00B14C0C /* pgoapi_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pgoapi_demoTests.swift; sourceTree = "<group>"; };
+		4D8646B41D475ACB00B14C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D8646B91D475ACB00B14C0C /* pgoapi-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pgoapi-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8646BD1D475ACB00B14C0C /* pgoapi_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pgoapi_demoUITests.swift; sourceTree = "<group>"; };
+		4D8646BF1D475ACB00B14C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D8647111D4762A500B14C0C /* libs2geometry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libs2geometry.a; sourceTree = "<group>"; };
+		4D8647131D4762B300B14C0C /* s2geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s2geometry.h; sourceTree = "<group>"; };
+		4D8647141D47635600B14C0C /* pgoapi-demo-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pgoapi-demo-bridge.h"; sourceTree = "<group>"; };
+		4D86471B1D476EDF00B14C0C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4D86471D1D47719C00B14C0C /* libgcc_s.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libgcc_s.1.tbd; path = usr/lib/libgcc_s.1.tbd; sourceTree = SDKROOT; };
+		8028F70DE65414CB723BA4C1 /* Pods-pgoapi-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pgoapi-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pgoapi-demo/Pods-pgoapi-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		A3316AFB1D41768600AAF7E0 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		A3316AFC1D41768600AAF7E0 /* AuthDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDelegate.swift; sourceTree = "<group>"; };
+		A3316AFD1D41768600AAF7E0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A3316AFE1D41768600AAF7E0 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		A3316AFF1D41768600AAF7E0 /* PGoApiDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGoApiDelegate.swift; sourceTree = "<group>"; };
+		A3316B001D41768600AAF7E0 /* PGoApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGoApiRequest.swift; sourceTree = "<group>"; };
+		A3316B011D41768600AAF7E0 /* RpcApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RpcApi.swift; sourceTree = "<group>"; };
+		A3316B0A1D4176A600AAF7E0 /* Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift; sourceTree = "<group>"; };
+		A3316B0B1D4176A600AAF7E0 /* Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift; sourceTree = "<group>"; };
+		A3316B0C1D4176A600AAF7E0 /* Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift; sourceTree = "<group>"; };
+		A3316B0D1D4176A600AAF7E0 /* Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift; sourceTree = "<group>"; };
+		A3316B0E1D4176A600AAF7E0 /* Pogoprotos.Data.PogoprotosData.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.PogoprotosData.proto.swift; sourceTree = "<group>"; };
+		A3316B0F1D4176A600AAF7E0 /* Pogoprotos.Enums.PogoprotosEnums.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Enums.PogoprotosEnums.proto.swift; sourceTree = "<group>"; };
+		A3316B101D4176A600AAF7E0 /* Pogoprotos.Inventory.PogoprotosInventory.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Inventory.PogoprotosInventory.proto.swift; sourceTree = "<group>"; };
+		A3316B111D4176A600AAF7E0 /* Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift; sourceTree = "<group>"; };
+		A3316B121D4176A600AAF7E0 /* Pogoprotos.Map.PogoprotosMap.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Map.PogoprotosMap.proto.swift; sourceTree = "<group>"; };
+		A3316B131D4176A600AAF7E0 /* Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift; sourceTree = "<group>"; };
+		A3316B141D4176A600AAF7E0 /* Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift; sourceTree = "<group>"; };
+		A3316B151D4176A600AAF7E0 /* Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift; sourceTree = "<group>"; };
+		A3316B161D4176A600AAF7E0 /* Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift; sourceTree = "<group>"; };
+		A3316B171D4176A600AAF7E0 /* Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift; sourceTree = "<group>"; };
+		A3316B181D4176A600AAF7E0 /* Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift; sourceTree = "<group>"; };
+		A3316B191D4176A600AAF7E0 /* Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift; sourceTree = "<group>"; };
+		A3316B1A1D4176A600AAF7E0 /* Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift; sourceTree = "<group>"; };
+		A3316B1B1D4176A600AAF7E0 /* Pogoprotos.Settings.PogoprotosSettings.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Settings.PogoprotosSettings.proto.swift; sourceTree = "<group>"; };
+		A3316B1C1D4176A600AAF7E0 /* Pogoprotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.swift; sourceTree = "<group>"; };
+		A35B131A1D417B7000C5A2A0 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		A3C863D51D43D5C0009888D6 /* S2Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S2Geometry.swift; sourceTree = "<group>"; };
+		A3C863D71D4520CB009888D6 /* Pogoprotos.Inventory.Item.PogoprotosInventoryItem.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Inventory.Item.PogoprotosInventoryItem.proto.swift; sourceTree = "<group>"; };
+		A3C863D91D452127009888D6 /* Pogoprotos.Data.Logs.PogoprotosDataLogs.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pogoprotos.Data.Logs.PogoprotosDataLogs.proto.swift; sourceTree = "<group>"; };
+		A3E5B6A41D4174FB005DA98B /* pgoapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pgoapi.h; sourceTree = "<group>"; };
+		A3E5B6A61D4174FB005DA98B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2EDE43BE100C92DFE18C6AA /* Pods-pgoapi-cli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pgoapi-cli.release.xcconfig"; path = "Pods/Target Support Files/Pods-pgoapi-cli/Pods-pgoapi-cli.release.xcconfig"; sourceTree = "<group>"; };
+		E4831DDEEB772493468646A6 /* Pods-pgoapi-cli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pgoapi-cli.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pgoapi-cli/Pods-pgoapi-cli.debug.xcconfig"; sourceTree = "<group>"; };
+		F58BB2577AC20D051E3D9F90 /* Pods_pgoapi_cli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pgoapi_cli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D8646951D475ACB00B14C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D86471E1D47719C00B14C0C /* libgcc_s.1.tbd in Frameworks */,
+				4D86471C1D476EDF00B14C0C /* libc++.tbd in Frameworks */,
+				4D8647151D4769AB00B14C0C /* libs2geometry.a in Frameworks */,
+				D35FD924532DF9B0FE42928F /* Pods_pgoapi_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D8646AB1D475ACB00B14C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D8646B61D475ACB00B14C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27E438C685F62D929A9305C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D86471D1D47719C00B14C0C /* libgcc_s.1.tbd */,
+				4D86471B1D476EDF00B14C0C /* libc++.tbd */,
+				1605415E38D3A2E3BBB9983E /* Pods_pgoapi.framework */,
+				F58BB2577AC20D051E3D9F90 /* Pods_pgoapi_cli.framework */,
+				42301C7BF0412DA9C6C17D82 /* Pods_pgoapi_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D8646991D475ACB00B14C0C /* pgoapi-demo */ = {
+			isa = PBXGroup;
+			children = (
+				4D86469A1D475ACB00B14C0C /* AppDelegate.swift */,
+				4D86469C1D475ACB00B14C0C /* ViewController.swift */,
+				4D86469E1D475ACB00B14C0C /* Main.storyboard */,
+				4D8646A41D475ACB00B14C0C /* Assets.xcassets */,
+				4D8646A61D475ACB00B14C0C /* LaunchScreen.storyboard */,
+				4D8646A91D475ACB00B14C0C /* Info.plist */,
+				4D8646A11D475ACB00B14C0C /* pgoapi_demo.xcdatamodeld */,
+			);
+			path = "pgoapi-demo";
+			sourceTree = "<group>";
+		};
+		4D8646B11D475ACB00B14C0C /* pgoapi-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D8646B21D475ACB00B14C0C /* pgoapi_demoTests.swift */,
+				4D8646B41D475ACB00B14C0C /* Info.plist */,
+			);
+			path = "pgoapi-demoTests";
+			sourceTree = "<group>";
+		};
+		4D8646BC1D475ACB00B14C0C /* pgoapi-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D8646BD1D475ACB00B14C0C /* pgoapi_demoUITests.swift */,
+				4D8646BF1D475ACB00B14C0C /* Info.plist */,
+			);
+			path = "pgoapi-demoUITests";
+			sourceTree = "<group>";
+		};
+		A3316B091D4176A600AAF7E0 /* protos */ = {
+			isa = PBXGroup;
+			children = (
+				A3316B0A1D4176A600AAF7E0 /* Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift */,
+				A3316B0B1D4176A600AAF7E0 /* Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift */,
+				A3316B0C1D4176A600AAF7E0 /* Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift */,
+				A3C863D91D452127009888D6 /* Pogoprotos.Data.Logs.PogoprotosDataLogs.proto.swift */,
+				A3316B0D1D4176A600AAF7E0 /* Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift */,
+				A3316B0E1D4176A600AAF7E0 /* Pogoprotos.Data.PogoprotosData.proto.swift */,
+				A3316B0F1D4176A600AAF7E0 /* Pogoprotos.Enums.PogoprotosEnums.proto.swift */,
+				A3C863D71D4520CB009888D6 /* Pogoprotos.Inventory.Item.PogoprotosInventoryItem.proto.swift */,
+				A3316B101D4176A600AAF7E0 /* Pogoprotos.Inventory.PogoprotosInventory.proto.swift */,
+				A3316B111D4176A600AAF7E0 /* Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift */,
+				A3316B121D4176A600AAF7E0 /* Pogoprotos.Map.PogoprotosMap.proto.swift */,
+				A3316B131D4176A600AAF7E0 /* Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift */,
+				A3316B141D4176A600AAF7E0 /* Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift */,
+				A3316B151D4176A600AAF7E0 /* Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift */,
+				A3316B161D4176A600AAF7E0 /* Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift */,
+				A3316B171D4176A600AAF7E0 /* Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift */,
+				A3316B181D4176A600AAF7E0 /* Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift */,
+				A3316B191D4176A600AAF7E0 /* Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift */,
+				A3316B1A1D4176A600AAF7E0 /* Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift */,
+				A3316B1B1D4176A600AAF7E0 /* Pogoprotos.Settings.PogoprotosSettings.proto.swift */,
+				A3316B1C1D4176A600AAF7E0 /* Pogoprotos.swift */,
+			);
+			path = protos;
+			sourceTree = "<group>";
+		};
+		A3E5B6971D4174FB005DA98B = {
+			isa = PBXGroup;
+			children = (
+				4D8647141D47635600B14C0C /* pgoapi-demo-bridge.h */,
+				4D8647131D4762B300B14C0C /* s2geometry.h */,
+				4D8647111D4762A500B14C0C /* libs2geometry.a */,
+				A3E5B6A31D4174FB005DA98B /* pgoapi */,
+				A3316B091D4176A600AAF7E0 /* protos */,
+				4D8646991D475ACB00B14C0C /* pgoapi-demo */,
+				4D8646B11D475ACB00B14C0C /* pgoapi-demoTests */,
+				4D8646BC1D475ACB00B14C0C /* pgoapi-demoUITests */,
+				A3E5B6A21D4174FB005DA98B /* Products */,
+				D17CEA2BE33DDB293CBFEAD3 /* Pods */,
+				27E438C685F62D929A9305C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3E5B6A21D4174FB005DA98B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D8646981D475ACB00B14C0C /* pgoapi-demo.app */,
+				4D8646AE1D475ACB00B14C0C /* pgoapi-demoTests.xctest */,
+				4D8646B91D475ACB00B14C0C /* pgoapi-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3E5B6A31D4174FB005DA98B /* pgoapi */ = {
+			isa = PBXGroup;
+			children = (
+				A3316AFB1D41768600AAF7E0 /* Auth.swift */,
+				A3316AFC1D41768600AAF7E0 /* AuthDelegate.swift */,
+				A3316AFD1D41768600AAF7E0 /* Extensions.swift */,
+				A3316AFE1D41768600AAF7E0 /* Globals.swift */,
+				A3316AFF1D41768600AAF7E0 /* PGoApiDelegate.swift */,
+				A3316B001D41768600AAF7E0 /* PGoApiRequest.swift */,
+				A3316B011D41768600AAF7E0 /* RpcApi.swift */,
+				A3C863D51D43D5C0009888D6 /* S2Geometry.swift */,
+				A3E5B6A41D4174FB005DA98B /* pgoapi.h */,
+				A3E5B6A61D4174FB005DA98B /* Info.plist */,
+				A35B131A1D417B7000C5A2A0 /* ExampleViewController.swift */,
+			);
+			path = pgoapi;
+			sourceTree = "<group>";
+		};
+		D17CEA2BE33DDB293CBFEAD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4831DDEEB772493468646A6 /* Pods-pgoapi-cli.debug.xcconfig */,
+				C2EDE43BE100C92DFE18C6AA /* Pods-pgoapi-cli.release.xcconfig */,
+				8028F70DE65414CB723BA4C1 /* Pods-pgoapi-demo.debug.xcconfig */,
+				4906714F23B56051ED48064F /* Pods-pgoapi-demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D8646971D475ACB00B14C0C /* pgoapi-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D8646C01D475ACB00B14C0C /* Build configuration list for PBXNativeTarget "pgoapi-demo" */;
+			buildPhases = (
+				F6D1DDC17E47C5B2DF848952 /* [CP] Check Pods Manifest.lock */,
+				4D8646941D475ACB00B14C0C /* Sources */,
+				4D8646951D475ACB00B14C0C /* Frameworks */,
+				4D8646961D475ACB00B14C0C /* Resources */,
+				8615F1AE40A933154F42F0FA /* [CP] Embed Pods Frameworks */,
+				734D64B78A207AAB94345CCF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pgoapi-demo";
+			productName = "pgoapi-demo";
+			productReference = 4D8646981D475ACB00B14C0C /* pgoapi-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D8646AD1D475ACB00B14C0C /* pgoapi-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D8646C31D475ACB00B14C0C /* Build configuration list for PBXNativeTarget "pgoapi-demoTests" */;
+			buildPhases = (
+				4D8646AA1D475ACB00B14C0C /* Sources */,
+				4D8646AB1D475ACB00B14C0C /* Frameworks */,
+				4D8646AC1D475ACB00B14C0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D8646B01D475ACB00B14C0C /* PBXTargetDependency */,
+			);
+			name = "pgoapi-demoTests";
+			productName = "pgoapi-demoTests";
+			productReference = 4D8646AE1D475ACB00B14C0C /* pgoapi-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D8646B81D475ACB00B14C0C /* pgoapi-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D8646C61D475ACB00B14C0C /* Build configuration list for PBXNativeTarget "pgoapi-demoUITests" */;
+			buildPhases = (
+				4D8646B51D475ACB00B14C0C /* Sources */,
+				4D8646B61D475ACB00B14C0C /* Frameworks */,
+				4D8646B71D475ACB00B14C0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D8646BB1D475ACB00B14C0C /* PBXTargetDependency */,
+			);
+			name = "pgoapi-demoUITests";
+			productName = "pgoapi-demoUITests";
+			productReference = 4D8646B91D475ACB00B14C0C /* pgoapi-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3E5B6981D4174FB005DA98B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Coadstal;
+				TargetAttributes = {
+					4D8646971D475ACB00B14C0C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4D8646AD1D475ACB00B14C0C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4D8646971D475ACB00B14C0C;
+					};
+					4D8646B81D475ACB00B14C0C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4D8646971D475ACB00B14C0C;
+					};
+				};
+			};
+			buildConfigurationList = A3E5B69B1D4174FB005DA98B /* Build configuration list for PBXProject "pgoapi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3E5B6971D4174FB005DA98B;
+			productRefGroup = A3E5B6A21D4174FB005DA98B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D8646971D475ACB00B14C0C /* pgoapi-demo */,
+				4D8646AD1D475ACB00B14C0C /* pgoapi-demoTests */,
+				4D8646B81D475ACB00B14C0C /* pgoapi-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D8646961D475ACB00B14C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D8646A81D475ACB00B14C0C /* LaunchScreen.storyboard in Resources */,
+				4D8646A51D475ACB00B14C0C /* Assets.xcassets in Resources */,
+				4D8646A01D475ACB00B14C0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D8646AC1D475ACB00B14C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D8646B71D475ACB00B14C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		734D64B78A207AAB94345CCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pgoapi-demo/Pods-pgoapi-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8615F1AE40A933154F42F0FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pgoapi-demo/Pods-pgoapi-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6D1DDC17E47C5B2DF848952 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D8646941D475ACB00B14C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D8646F51D475D7200B14C0C /* Pogoprotos.Data.Gym.PogoprotosDataGym.proto.swift in Sources */,
+				4D86470A1D475D7B00B14C0C /* Extensions.swift in Sources */,
+				4D8646FE1D475D7200B14C0C /* Pogoprotos.Map.Pokemon.PogoprotosMapPokemon.proto.swift in Sources */,
+				4D8647011D475D7200B14C0C /* Pogoprotos.Networking.Requests.PogoprotosNetworkingRequests.proto.swift in Sources */,
+				4D8647021D475D7200B14C0C /* Pogoprotos.Networking.Responses.PogoprotosNetworkingResponses.proto.swift in Sources */,
+				4D86470D1D475D7B00B14C0C /* PGoApiRequest.swift in Sources */,
+				4D8646F41D475D7200B14C0C /* Pogoprotos.Data.Capture.PogoprotosDataCapture.proto.swift in Sources */,
+				4D8647081D475D7B00B14C0C /* Auth.swift in Sources */,
+				4D8646A31D475ACB00B14C0C /* pgoapi_demo.xcdatamodeld in Sources */,
+				4D8647001D475D7200B14C0C /* Pogoprotos.Networking.Requests.Messages.PogoprotosNetworkingRequestsMessages.proto.swift in Sources */,
+				4D8647041D475D7200B14C0C /* Pogoprotos.Settings.Master.PogoprotosSettingsMaster.proto.swift in Sources */,
+				4D8647101D475D7B00B14C0C /* ExampleViewController.swift in Sources */,
+				4D86469D1D475ACB00B14C0C /* ViewController.swift in Sources */,
+				4D8646F81D475D7200B14C0C /* Pogoprotos.Data.PogoprotosData.proto.swift in Sources */,
+				4D86470E1D475D7B00B14C0C /* RpcApi.swift in Sources */,
+				4D86470B1D475D7B00B14C0C /* Globals.swift in Sources */,
+				4D8646FB1D475D7200B14C0C /* Pogoprotos.Inventory.PogoprotosInventory.proto.swift in Sources */,
+				4D8646F71D475D7200B14C0C /* Pogoprotos.Data.Player.PogoprotosDataPlayer.proto.swift in Sources */,
+				4D8647061D475D7200B14C0C /* Pogoprotos.Settings.PogoprotosSettings.proto.swift in Sources */,
+				4D8646F61D475D7200B14C0C /* Pogoprotos.Data.Logs.PogoprotosDataLogs.proto.swift in Sources */,
+				4D8646F91D475D7200B14C0C /* Pogoprotos.Enums.PogoprotosEnums.proto.swift in Sources */,
+				4D8647091D475D7B00B14C0C /* AuthDelegate.swift in Sources */,
+				4D8647071D475D7200B14C0C /* Pogoprotos.swift in Sources */,
+				4D8647031D475D7200B14C0C /* Pogoprotos.Settings.Master.Item.PogoprotosSettingsMasterItem.proto.swift in Sources */,
+				4D86470C1D475D7B00B14C0C /* PGoApiDelegate.swift in Sources */,
+				4D8646FF1D475D7200B14C0C /* Pogoprotos.Networking.Envelopes.PogoprotosNetworkingEnvelopes.proto.swift in Sources */,
+				4D8646FA1D475D7200B14C0C /* Pogoprotos.Inventory.Item.PogoprotosInventoryItem.proto.swift in Sources */,
+				4D8647051D475D7200B14C0C /* Pogoprotos.Settings.Master.Pokemon.PogoprotosSettingsMasterPokemon.proto.swift in Sources */,
+				4D8646F31D475D7200B14C0C /* Pogoprotos.Data.Battle.PogoprotosDataBattle.proto.swift in Sources */,
+				4D86470F1D475D7B00B14C0C /* S2Geometry.swift in Sources */,
+				4D8646FD1D475D7200B14C0C /* Pogoprotos.Map.PogoprotosMap.proto.swift in Sources */,
+				4D8646FC1D475D7200B14C0C /* Pogoprotos.Map.Fort.PogoprotosMapFort.proto.swift in Sources */,
+				4D86469B1D475ACB00B14C0C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D8646AA1D475ACB00B14C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D8646B31D475ACB00B14C0C /* pgoapi_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D8646B51D475ACB00B14C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D8646BE1D475ACB00B14C0C /* pgoapi_demoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D8646B01D475ACB00B14C0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D8646971D475ACB00B14C0C /* pgoapi-demo */;
+			targetProxy = 4D8646AF1D475ACB00B14C0C /* PBXContainerItemProxy */;
+		};
+		4D8646BB1D475ACB00B14C0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D8646971D475ACB00B14C0C /* pgoapi-demo */;
+			targetProxy = 4D8646BA1D475ACB00B14C0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D86469E1D475ACB00B14C0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D86469F1D475ACB00B14C0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D8646A61D475ACB00B14C0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D8646A71D475ACB00B14C0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D8646C11D475ACB00B14C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8028F70DE65414CB723BA4C1 /* Pods-pgoapi-demo.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				INFOPLIST_FILE = "pgoapi-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dryverless.pgoapi-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pgoapi-demo-bridge.h";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		4D8646C21D475ACB00B14C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4906714F23B56051ED48064F /* Pods-pgoapi-demo.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				INFOPLIST_FILE = "pgoapi-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dryverless.pgoapi-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pgoapi-demo-bridge.h";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		4D8646C41D475ACB00B14C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "pgoapi-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dryverless.pgoapi-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pgoapi-demo.app/pgoapi-demo";
+			};
+			name = Debug;
+		};
+		4D8646C51D475ACB00B14C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "pgoapi-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dryverless.pgoapi-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pgoapi-demo.app/pgoapi-demo";
+			};
+			name = Release;
+		};
+		4D8646C71D475ACB00B14C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "pgoapi-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dryverless.pgoapi-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "pgoapi-demo";
+			};
+			name = Debug;
+		};
+		4D8646C81D475ACB00B14C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "pgoapi-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dryverless.pgoapi-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "pgoapi-demo";
+			};
+			name = Release;
+		};
+		A3E5B6A71D4174FB005DA98B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3E5B6A81D4174FB005DA98B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D8646C01D475ACB00B14C0C /* Build configuration list for PBXNativeTarget "pgoapi-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D8646C11D475ACB00B14C0C /* Debug */,
+				4D8646C21D475ACB00B14C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D8646C31D475ACB00B14C0C /* Build configuration list for PBXNativeTarget "pgoapi-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D8646C41D475ACB00B14C0C /* Debug */,
+				4D8646C51D475ACB00B14C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D8646C61D475ACB00B14C0C /* Build configuration list for PBXNativeTarget "pgoapi-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D8646C71D475ACB00B14C0C /* Debug */,
+				4D8646C81D475ACB00B14C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E5B69B1D4174FB005DA98B /* Build configuration list for PBXProject "pgoapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E5B6A71D4174FB005DA98B /* Debug */,
+				A3E5B6A81D4174FB005DA98B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D8646A11D475ACB00B14C0C /* pgoapi_demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D8646A21D475ACB00B14C0C /* pgoapi_demo.xcdatamodel */,
+			);
+			currentVersion = 4D8646A21D475ACB00B14C0C /* pgoapi_demo.xcdatamodel */;
+			path = pgoapi_demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A3E5B6981D4174FB005DA98B /* Project object */;
+}

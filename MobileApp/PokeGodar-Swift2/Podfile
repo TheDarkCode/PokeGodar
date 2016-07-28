@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+#project 'PokeGodar-Swift2.xcodeproj'
+
+platform :ios, ‘9.0'
+use_frameworks!
+
+target 'PokeGodar-Swift2' do
+
+ pod 'Alamofire', '~> 3.4'
+ pod 'ProtocolBuffers-Swift', :git => 'https://github.com/alexeyxo/protobuf-swift', :branch => 'ProtoBuf3.0-Swift2.0'
+
+end

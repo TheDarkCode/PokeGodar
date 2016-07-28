@@ -1,0 +1,6 @@
+framework module Pods_PokeGodar_Swift2 {
+  umbrella header "Pods-PokeGodar-Swift2-umbrella.h"
+
+  export *
+  module * { export * }
+}
