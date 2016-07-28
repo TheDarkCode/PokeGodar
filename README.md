@@ -1,13 +1,31 @@
-# PokeGodar
-Sample project in C# and Swift 3 to demonstrate building a comprehensive Pokemon Go Radar and backend which can be scaled to accomodate any level of traffic. This project is sponsored by [Dryverless, Inc.](http://www.dryverless.com) and is a non-commercial project covered by fair use exemption for the purposes of research and commentary.
+###Cups of coffee donated: :coffee:
 
-This repo, when complete, will contain a sample full application (client and back-end in separate projects) that demonstrates using Swift 3 for iOS 10 with a ASP.NET 4.6.x Web API on Azure using DocumentDB and Azure Search.
+# PokeGodar
+###Status: Not Building - yet. Subroutines, Layouts, etc, still being added.
+Sample project in C# and Swift 3 to demonstrate building a comprehensive Pokemon Go Radar / Bot with backend which can be scaled to accomodate any level of traffic. This project is sponsored by [Dryverless, Inc.](http://www.dryverless.com) and is a non-commercial project covered by fair use exemption for the purposes of research and commentary.
+
+####Planned Features
+  - PTC and Google Authentication
+  - Heartbeat / Autowalking
+  - Pokestop / Gym Farming
+  - Auto-catch Pokemon
+  - Evolve Pokemon
+  - Transfer Pokemon
+  - Use Lucky Eggs
+  - Use Incense
+  - Use Best Pokeball or Berry
+  - Cloud-based Botting
+  - Data Export / Mining via Azure ML
+
+This repo, when complete, will contain a sample full application (client and back-end in separate projects) that demonstrates using Swift 3 for iOS 10 with a ASP.NET 4.6.x Web API on Azure using DocumentDB and Azure Search. Swift 2.x support is handled via iOS 9.x MobileApp project.
 
 Real-time support is handled via websockets and SignalR for the purposes of demonstration. If you choose to use a backplane, you should be aware of latency or cost issues that might be incurred.
 
 <hr />
 
-####If you looking for a fully-supported development framework for quickly launching mobile applications, please e-mail: [sales@dryverless.com](mailto:sales@dryverless.com?Subject=Ahtau Sales). Ask for a license to use the Ahtau Framework.
+####If you looking for a fully-supported development framework for quickly launching mobile applications, inquire via e-mail: [sales@dryverless.com](mailto:sales@dryverless.com?Subject=Ahtau Sales). Ask for a license to use the Ahtau Framework.
+
+####If you are an Advertiser or Publisher looking to increase payouts, lead generation, or explore new monetization strategies, sign up at [DryverlessAds.com](http://www.dryverlessads.com).
 
 <hr />
 
