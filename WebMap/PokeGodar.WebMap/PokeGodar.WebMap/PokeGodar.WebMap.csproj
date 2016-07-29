@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D650896-CD44-4F38-AB83-A1A46100EEE2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PokeGodar.WebMap</RootNamespace>
+    <AssemblyName>PokeGodar.WebMap</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.1.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.1.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.1.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.1.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.1.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.1.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\navbar.css" />
+    <Content Include="css\site.css" />
+    <Content Include="index.html" />
+    <Content Include="js\app\confirmEmailCtrl\confirmEmail.html" />
+    <Content Include="js\app\confirmEmailCtrl\confirmEmailCtrl.js" />
+    <Content Include="js\app\pokemonCtrl\config\pokemonConfig.js" />
+    <Content Include="js\app\pokemonCtrl\controllers\pokemonDetail.js" />
+    <Content Include="js\app\pokemonCtrl\controllers\pokemonFacets.js" />
+    <Content Include="js\app\pokemonCtrl\controllers\pokemonRepeater.js" />
+    <Content Include="js\app\pokemonCtrl\controllers\pokemonSearchForm.js" />
+    <Content Include="js\app\pokemonCtrl\controllers\pokemonMap.js" />
+    <Content Include="js\app\pokemonCtrl\controllers\pokemonSort.js" />
+    <Content Include="js\app\pokemonCtrl\controllers\pokemonRoute.js" />
+    <Content Include="js\app\pokemonCtrl\filter\dollars.js" />
+    <Content Include="js\app\pokemonCtrl\pokemon.html" />
+    <Content Include="js\app\pokemonCtrl\pokemonCtrl.js" />
+    <Content Include="js\app\indexCtrl\config\indexConfig.js" />
+    <Content Include="js\app\indexCtrl\index.html" />
+    <Content Include="js\app\indexCtrl\indexCtrl.js" />
+    <Content Include="js\app\loginCtrl\login.html" />
+    <Content Include="js\app\loginCtrl\loginCtrl.js" />
+    <Content Include="js\app\PokeGodar.js" />
+    <Content Include="js\app\services\authInterceptorService.js" />
+    <Content Include="js\app\services\authService.js" />
+    <Content Include="js\app\signupCtrl\signup.html" />
+    <Content Include="js\app\signupCtrl\signupCtrl.js" />
+    <Content Include="js\app\templates\templates.js" />
+    <Content Include="js\app\trailsCtrl\config\trailsConfig.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailDetail.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailFacets.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailRepeater.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailSearchForm.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailsMap.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailSort.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailsRoute.js" />
+    <Content Include="js\app\trailsCtrl\trails.html" />
+    <Content Include="js\app\trailsCtrl\trailsCtrl.js" />
+    <Content Include="js\external-modules\azureSearch\azureSearch.js" />
+    <Content Include="js\external-modules\azureSearch\factories\facetUrl.js" />
+    <Content Include="js\external-modules\azureSearch\factories\filterFacet.js" />
+    <Content Include="js\external-modules\azureSearch\factories\filterUrl.js" />
+    <Content Include="js\external-modules\azureSearch\factories\formatFilter.js" />
+    <Content Include="js\external-modules\azureSearch\factories\groupFilters.js" />
+    <Content Include="js\external-modules\azureSearch\factories\parseFilter.js" />
+    <Content Include="js\external-modules\azureSearch\factories\search.js" />
+    <Content Include="js\external-modules\azureSearch\factories\suggest.js" />
+    <Content Include="js\external-modules\azureSearch\factories\tokenizeFilters.js" />
+    <Content Include="js\external-modules\facetUrl.js" />
+    <Content Include="js\external-modules\filterFacet.js" />
+    <Content Include="js\external-modules\filterUrl.js" />
+    <Content Include="js\external-modules\formatFilter.js" />
+    <Content Include="js\external-modules\groupFilters.js" />
+    <Content Include="js\external-modules\html\directives\anchorBottom.js" />
+    <Content Include="js\external-modules\html\html.js" />
+    <Content Include="js\external-modules\mapping\directives\map.js" />
+    <Content Include="js\external-modules\mapping\factories\bestView.js" />
+    <Content Include="js\external-modules\mapping\factories\currentLocation.js" />
+    <Content Include="js\external-modules\mapping\factories\drawPolygon.js" />
+    <Content Include="js\external-modules\mapping\factories\searchBounds.js" />
+    <Content Include="js\external-modules\mapping\mapping.js" />
+    <Content Include="js\external-modules\parseFilter.js" />
+    <Content Include="js\external-modules\search.js" />
+    <Content Include="js\external-modules\suggest.js" />
+    <Content Include="js\external-modules\tokenizeFilters.js" />
+    <Content Include="js\external-modules\userInput\factories\cancelInput.js" />
+    <Content Include="js\external-modules\userInput\userInput.js" />
+    <Content Include="js\PokeGodar.js" />
+    <Content Include="lib\css\bootstrap.css" />
+    <Content Include="lib\js\angular-resource.js" />
+    <Content Include="lib\js\angular-route.js" />
+    <Content Include="lib\js\angular.js" />
+    <Content Include="lib\js\bootstrap.js" />
+    <Content Include="lib\js\jquery.js" />
+    <Content Include="lib\js\lodash.js" />
+    <Content Include="scripts\ai.0.22.19-build00125.js" />
+    <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="views\pokemon.html" />
+    <Content Include="views\index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\app\trailsCtrl\filter\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25829</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:25829/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

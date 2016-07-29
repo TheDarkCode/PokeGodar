@@ -1,0 +1,169 @@
+﻿<div class="container">
+    <h1>PokeGodar</h1>
+
+    <p>A Pokemon Go Global search index demonstrating <a href="https://azure.microsoft.com/en-us/services/search/">Azure Search</a> and <a href="https://msdn.microsoft.com/en-us/library/dd877180.aspx">Bing Maps</a> integration.</p>
+
+    <form ng-submit="search()" ng-controller="pokemonSearchForm">
+
+        <div class="input-group">
+            <input type="text" class="form-control" ng-model="model.query.q" placeholder="e.g. boston or seattle or back bay" ng-model-options="{debounce:{'default':100, 'blur':0}}" ng-change="suggest()" ng-click="searchInputClicked($event)" ng-disabled="loading">
+
+            <div class="input-group-btn">
+                <button type="submit" class="btn btn-default" title="search" ng-disabled="loading">
+
+                    <span class="glyphicon glyphicon-search">
+                    </span>
+                </button>      <button ng-if="model.query.filter || model.query.order" type="button" class="btn btn-link" ng-click="resetFilter()" title="reset filters" ng-disabled="loading">reset</button>
+            </div>
+        </div>
+
+        <div style="position:fixed;z-index:9999;left:0;right:0;" ng-if="suggestResult.$resolved">
+
+            <div class="container">
+                <ul class="list-group" style="background:white;margin-top:-1px;">
+                    <li class="list-group-item" ng-repeat="doc in suggestResult.value" ng-click="clickSuggest($event, doc['@search.text'])">          <a href="" ng-bind-html="html(doc['@search.text'])"></a>        </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+<hr>
+
+<div>
+
+    <div anchor-bottom>
+
+        <div class="row" style="height:100%">
+            <!-- map column -->
+
+            <div class="col-xs-6 col-sm-5" style="height:100%" ng-controller="pokemonMap">
+
+                <div style="position:relative;z-index:100;padding:20px;">
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-small" ng-click="currentLocation()">current location</button>          <button type="button" class="btn btn-default btn-small" ng-click="drawPolygon()">draw shape</button>          <button type="button" class="btn btn-default btn-small" ng-click="searchMapArea()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+
+                <p ng-if="drawing" style="top:0;background:white;position:relative;z-index:100;margin-right:-15px;padding:5px 20px;">        <kbd>double-click</kbd> or <kbd>enter</kbd> to end. <kbd>ESC</kbd> to cancel.      </p>
+
+                <div id="map" map ready="mapReady(map)">
+                </div>
+            </div>
+            <!-- loading -->
+
+            <div class="col-xs-6 col-sm-7" ng-if="!result.$resolved" style="height:100%;">
+
+                <div class="text-center" style="font-size:32px;padding-top:100px;color:#ccc;border:1px solid #eee;height:100%;">
+                    Loading
+                </div>
+            </div>
+            <!-- result column -->
+
+            <div class="col-sm-4" style="height:100%;" ng-if="result.$resolved">
+                <!-- result detail -->
+
+                <div id="result-detail" ng-if="model.detail" ng-controller="pokemonDetail">
+                    <img ng-src="{{model.detail.imageUrls[model.detail['@image']]}}" style="border:1px solid #ccc;height:100%;width:auto;float:left;margin-right:4px;max-width:120px;" ng-click="nextImage()">
+
+                    <p>
+                        <b>{{model.detail.street}}</b> <small>&bull; {{model.detail.city}}, {{model.detail.state}} {{model.detail.zip}}</small>          <small>
+                            
+
+                            <span class="text-muted">
+
+                                <span ng-if="model.detail.pokemonType">
+                                    &bull; {{model.detail.pokemonType}}
+                                </span>
+                            </span>
+                            <br>
+
+                        </small>
+                    </p>
+
+                    <div style="clear;left;">
+                    </div>
+                </div>
+                <!-- result sorting -->
+
+                <div class="small" style="margin-bottom:6px;" ng-controller="pokemonSort">
+
+                    <div class="pull-right">
+
+                        <span class="text-muted">
+                            sort by
+                        </span>
+
+                        <span class="dropdown">
+                            <a href="" data-toggle="dropdown" style="padding-right:2px;">{{orderBy.label}}</a>
+                            <ul class="dropdown-menu" style="right:0;left:auto;">
+                                <li ng-repeat="(field, label) in orderFields">                <a ng-href="{{orderUrl(field)}}">{{label}}</a>              </li>
+                            </ul>
+                        </span>          <a href="{{toggleDirUrl()}}" style="font-size:8px;">
+
+                            <span ng-if="orderDir =='asc'" class="glyphicon glyphicon-triangle-top" title="ascending (low to high)">
+                            </span>
+
+                            <span ng-if="orderDir == 'desc'" class="glyphicon glyphicon-triangle-bottom" title="descending (high to low)">
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="text-muted">
+                        1 - {{result.value.length}} of {{result['@odata.count']}} results
+                    </div>
+                </div>
+                <!-- result list -->
+                <ul id="result-list" class="list-group">
+                    <li class="list-group-item" ng-repeat="doc in result.value" ng-click="focusResult($event)" ng-mouseover="resultMouseIn($event)" ng-mouseleave="resultMouseOut($event)" ng-controller="pokemonRepeater" ng-class="{'is-detail':doc['@active']}">
+                        <h5>
+                            <a href="">{{doc.street}}</a>            <small style="padding-left:1em;">
+                                {{doc.city}}
+
+                                <span ng-if="doc.rarity">
+                                    ({{doc.rarity}})
+                                </span>
+                            </small>
+                        </h5>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- facet column -->
+
+            <div class="col-sm-3" style="height:100%;overflow:auto;" ng-controller="pokemonFacets">
+                <ul class="list-unstyled facets" ng-if="result && result.$resolved">
+                    <li ng-repeat="field in ['rarity', 'pokemonType']">
+                        <h4>{{fieldLabel(field)}}</h4>
+                        <ul class="list-unstyled">
+                            <li ng-repeat="facet in result['@search.facets'][field]">
+                                <a href="{{facetUrl(field, facet, facetType[field])}}">
+
+                                    <span ng-if="facet.to && !facet.from">
+                                        &lt; {{facetLabel(field, facet.to)}}
+                                    </span>
+
+                                    <span ng-if="facet.to && facet.from">
+                                        {{facetLabel(field, facet.from)}} - {{facetLabel(field, facet.to)}}
+                                    </span>
+
+                                    <span ng-if="!facet.to && facet.from">
+                                        &gt; {{facetLabel(field, facet.from)}}
+                                    </span>
+
+                                    <span ng-if="facet.value">
+                                        {{facetLabel(field, facet.value)}}
+                                    </span>
+                                </a>
+
+                                <span class="text-muted small">
+                                    : {{facet.count|number}}
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

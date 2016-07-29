@@ -1,0 +1,164 @@
+﻿<!doctype html>
+<!--
+
+    ██████╗  ██████╗ ██╗  ██╗███████╗ ██████╗  ██████╗ ██████╗  █████╗ ██████╗ 
+    ██╔══██╗██╔═══██╗██║ ██╔╝██╔════╝██╔════╝ ██╔═══██╗██╔══██╗██╔══██╗██╔══██╗
+    ██████╔╝██║   ██║█████╔╝ █████╗  ██║  ███╗██║   ██║██║  ██║███████║██████╔╝
+    ██╔═══╝ ██║   ██║██╔═██╗ ██╔══╝  ██║   ██║██║   ██║██║  ██║██╔══██║██╔══██╗
+    ██║     ╚██████╔╝██║  ██╗███████╗╚██████╔╝╚██████╔╝██████╔╝██║  ██║██║  ██║
+    ╚═╝      ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+                                                                           
+
+    Base Repository ::
+    https://github.com/TheDarkCode/PokeGodar
+
+    Original Source Code Copyright (c) Liam Cavanagh / Microsoft
+    Author(s):
+        - Liam Cavanagh @ Microsoft / Azure Search Team (https://github.com/liamca/AzureSearchDemos)
+
+    Contributions by:
+    Author(s):
+        - Mark Hamilton @ Dryverless (https://github.com/TheDarkCode/AngularAzureSearch)
+      
+    Current version:: Build 1 7/29/2016
+
+-->
+
+<!-- ngApp to designate root element -->
+<html lang="en" ng-app="PokeGodar">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>PokeGodar Map</title>
+    <meta name="description" content="PokeGodar Map of Pokemon Go Database">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!--<link rel="stylesheet" href="lib/css/bootstrap.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/index">PokeGodar</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/">Index</a></li>
+                    <li><a href="#/pokemon">Pokemon (Geospatial)</a></li>
+                    <li><a href="https://www.github.com/thedarkcode/pokegodar">GitHub</a></li>
+                    <li><a href="http://www.dryverless.com"><strong>Dryverless</strong></a></li>
+                    <li><a href="https://azure.microsoft.com/en-us/services/search/">Azure Search</a></li>
+                </ul>
+
+
+                <!--<div ng-switch="vm.isAuthenticated">
+                    <div ng-switch-when="true">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a>Welcome {{vm.userName}}!</a></li>
+                            <li><a href="" ng-click="vm.logOut()">Log out</a></li>
+                        </ul>
+                    </div>
+                    <div ng-switch-when="false">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#/login">Sign In</a></li>
+                            <li><a href="#/signup">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>-->
+
+
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div>
+        <div ng-view></div>
+    </div>
+
+    <!-- Bing Maps map control v7.0 -->
+    <script src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=en-us&s=1"></script>
+
+    <!-- jQuery v2.1.4 -->
+    <script src="lib/js/jquery.js"></script>
+
+    <!-- lodash v3.10.1 -->
+    <script src="lib/js/lodash.js"></script>
+
+    <!-- Bootstrap v3.3.5 -->
+    <script src="lib/js/bootstrap.js"></script>
+
+    <!-- AngularJS v1.4.3 -->
+    <script src="lib/js/angular.js"></script>
+    <script src="lib/js/angular-route.js"></script>
+    <script src="lib/js/angular-resource.js"></script>
+
+    <!-- Precompiled Javascript -->
+    <!--<script src="js/site.js"></script>-->
+    <!-- Azure Search Core Module-->
+    <script src="js/external-modules/azureSearch/azureSearch.js"></script>
+    <!--<script src="js/external-modules/azureSearch/factories/facetUrl.js"></script>
+    <script src="js/external-modules/azureSearch/factories/filterFacet.js"></script>
+    <script src="js/external-modules/azureSearch/factories/filterUrl.js"></script>
+    <script src="js/external-modules/azureSearch/factories/formatFilter.js"></script>
+    <script src="js/external-modules/azureSearch/factories/groupFilters.js"></script>
+    <script src="js/external-modules/azureSearch/factories/parseFilter.js"></script>
+    <script src="js/external-modules/azureSearch/factories/search.js"></script>
+    <script src="js/external-modules/azureSearch/factories/suggest.js"></script>
+    <script src="js/external-modules/azureSearch/factories/tokenizeFilters.js"></script>-->
+    <!-- Bing Maps Core Module -->
+    <script src="js/external-modules/mapping/mapping.js"></script>
+    <!--<script src="js/external-modules/mapping/directives/map.js"></script>
+    <script src="js/external-modules/mapping/factories/bestView.js"></script>
+    <script src="js/external-modules/mapping/factories/currentLocation.js"></script>
+    <script src="js/external-modules/mapping/factories/drawPolygon.js"></script>
+    <script src="js/external-modules/mapping/factories/searchBounds.js"></script>-->
+    <!-- Anchor Bottom Directive to Auto Resize -->
+    <script src="js/external-modules/html/html.js"></script>
+    <!--<script src="js/external-modules/html/directives/anchorBottom.js"></script>-->
+    <!-- Cancel Input Factory -->
+    <script src="js/external-modules/userInput/userInput.js"></script>
+    <!--<script src="js/external-modules/userInput/factories/cancelInput.js"></script>-->
+    <!-- AngularJS App Main Module -->
+    <script src="js/app/PokeGodar.js"></script>
+
+    <!-- Angular Services -->
+    <!--<script src="js/app/services/authInterceptorService.js"></script>
+    <script src="js/app/services/authService.js"></script>-->
+    <!--  Login Controller (Login View) -->
+    <!--<script src="js/app/loginCtrl/loginCtrl.js"></script>-->
+    <!-- Signup Controller (Signup View) -->
+    <!--<script src="js/app/signupCtrl/signupCtrl.js"></script>-->
+    <!-- Confirm Email Controller (Confirm Email View) -->
+    <!--<script src="js/app/confirmEmailCtrl/confirmEmailCtrl.js"></script>-->
+    <!-- Index Controller (Pokemon View)-->
+    <script src="js/app/indexCtrl/indexCtrl.js"></script>
+    <!--<script src="js/app/indexCtrl/config/indexConfig.js"></script>-->
+    <!-- Pokemon Controller (Pokemon Geospatial Search View) -->
+    <script src="js/app/pokemonCtrl/pokemonCtrl.js"></script>
+    <!--<script src="js/app/pokemonCtrl/controllers/pokemonDetail.js"></script>
+    <script src="js/app/pokemonCtrl/controllers/pokemonFacets.js"></script>
+    <script src="js/app/pokemonCtrl/controllers/pokemonRepeater.js"></script>
+    <script src="js/app/pokemonCtrl/controllers/pokemonSearchForm.js"></script>
+    <script src="js/app/pokemonCtrl/controllers/pokemonMap.js"></script>
+    <script src="js/app/pokemonCtrl/controllers/pokemonSort.js"></script>
+    <script src="js/app/pokemonCtrl/controllers/pokemonRoute.js"></script>
+    <script src="js/app/pokemonCtrl/filter/dollars.js"></script>
+    <script src="js/app/pokemonCtrl/config/pokemonConfig.js"></script>-->
+
+</body>
+</html>

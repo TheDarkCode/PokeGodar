@@ -1,0 +1,19 @@
+﻿<h1>Login</h1>
+<div class="row">
+    <div class="col-xs-12 col-md-4">
+        <form name="loginForm" novalidate ng-submit="vm.submitLoginForm(loginForm.$valid)">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" ng-model="vm.login.userName" required class="form-control" autofocus />
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" ng-model="vm.login.password" required class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary" ng-disabled="loginForm.$invalid">Login</button>
+            <div data-ng-hide="vm.message == ''" data-ng-class="(vm.success) ? 'alert alert-success' : 'alert alert-danger'">
+                {{vm.message}} <div ng-show="vm.resendEmailConfirmationLinkIsVisible"><a href="" ng-click="vm.resendConfirmEmail(vm.login.userName)">Re-send confirmation email</a></div>
+            </div>
+        </form>
+    </div>
+</div>
