@@ -11,6 +11,7 @@ using scg = global::System.Collections.Generic;
 
 #endregion
 
+namespace PokeGodar.WebAPI.GeneratedCode
 {
     /// <summary>Holder for reflection information generated from Response.proto</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -46,19 +47,27 @@ using scg = global::System.Collections.Generic;
                 new pbr::FileDescriptor[] { },
                 new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[]
                 {
+                    new pbr::GeneratedClrTypeInfo(typeof(global::PokeGodar.WebAPI.GeneratedCode.Response),
+                        global::PokeGodar.WebAPI.GeneratedCode.Response.Parser,
                         new[] {"Unknown1", "Unknown2", "ApiUrl", "Unknown6", "Auth", "Payload", "ErrorMessage"}, null,
                         null, new pbr::GeneratedClrTypeInfo[]
                         {
                             new pbr::GeneratedClrTypeInfo(
+                                typeof(global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6),
+                                global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6.Parser,
                                 new[] {"Unknown1", "Unknown2"}, null, null,
                                 new pbr::GeneratedClrTypeInfo[]
                                 {
                                     new pbr::GeneratedClrTypeInfo(
                                         typeof(
+                                            global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6.Types.
                                                 Unknown2),
+                                        global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6.Types.Unknown2
                                             .Parser, new[] {"Unknown1"}, null, null, null)
                                 }),
                             new pbr::GeneratedClrTypeInfo(
+                                typeof(global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Auth),
+                                global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Auth.Parser,
                                 new[] {"Unknown71", "Timestamp", "Unknown73"}, null, null, null)
                         })
                 }));
@@ -101,9 +110,11 @@ using scg = global::System.Collections.Generic;
 
         private readonly pbc::RepeatedField<pb::ByteString> payload_ = new pbc::RepeatedField<pb::ByteString>();
         private string apiUrl_ = "";
+        private global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Auth auth_;
         private string errorMessage_ = "";
         private int unknown1_;
         private long unknown2_;
+        private global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6 unknown6_;
 
         public Response()
         {
@@ -128,6 +139,7 @@ using scg = global::System.Collections.Generic;
 
         public static pbr::MessageDescriptor Descriptor
         {
+            get { return global::PokeGodar.WebAPI.GeneratedCode.ResponseReflection.Descriptor.MessageTypes[0]; }
         }
 
         public int Unknown1
@@ -148,11 +160,13 @@ using scg = global::System.Collections.Generic;
             set { apiUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value"); }
         }
 
+        public global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6 Unknown6
         {
             get { return unknown6_; }
             set { unknown6_ = value; }
         }
 
+        public global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Auth Auth
         {
             get { return auth_; }
             set { auth_ = value; }
@@ -287,6 +301,7 @@ using scg = global::System.Collections.Generic;
             {
                 if (unknown6_ == null)
                 {
+                    unknown6_ = new global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6();
                 }
                 Unknown6.MergeFrom(other.Unknown6);
             }
@@ -294,6 +309,7 @@ using scg = global::System.Collections.Generic;
             {
                 if (auth_ == null)
                 {
+                    auth_ = new global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Auth();
                 }
                 Auth.MergeFrom(other.Auth);
             }
@@ -333,6 +349,7 @@ using scg = global::System.Collections.Generic;
                         {
                             if (unknown6_ == null)
                             {
+                                unknown6_ = new global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6();
                             }
                             input.ReadMessage(unknown6_);
                             break;
@@ -341,6 +358,7 @@ using scg = global::System.Collections.Generic;
                         {
                             if (auth_ == null)
                             {
+                                auth_ = new global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Auth();
                             }
                             input.ReadMessage(auth_);
                             break;
@@ -403,6 +421,7 @@ using scg = global::System.Collections.Generic;
                     new pb::MessageParser<Unknown6>(() => new Unknown6());
 
                 private int unknown1_;
+                private global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6.Types.Unknown2 unknown2_;
 
                 public Unknown6()
                 {
@@ -422,6 +441,7 @@ using scg = global::System.Collections.Generic;
 
                 public static pbr::MessageDescriptor Descriptor
                 {
+                    get { return global::PokeGodar.WebAPI.GeneratedCode.Response.Descriptor.NestedTypes[0]; }
                 }
 
                 public int Unknown1
@@ -430,6 +450,7 @@ using scg = global::System.Collections.Generic;
                     set { unknown1_ = value; }
                 }
 
+                public global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6.Types.Unknown2 Unknown2
                 {
                     get { return unknown2_; }
                     set { unknown2_ = value; }
@@ -503,6 +524,7 @@ using scg = global::System.Collections.Generic;
                         if (unknown2_ == null)
                         {
                             unknown2_ =
+                                new global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6.Types.Unknown2();
                         }
                         Unknown2.MergeFrom(other.Unknown2);
                     }
@@ -528,6 +550,7 @@ using scg = global::System.Collections.Generic;
                                     if (unknown2_ == null)
                                     {
                                         unknown2_ =
+                                            new global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6.Types.
                                                 Unknown2();
                                     }
                                     input.ReadMessage(unknown2_);
@@ -594,6 +617,7 @@ using scg = global::System.Collections.Generic;
                             get
                             {
                                 return
+                                    global::PokeGodar.WebAPI.GeneratedCode.Response.Types.Unknown6.Descriptor
                                         .NestedTypes[0];
                             }
                         }
@@ -738,6 +762,7 @@ using scg = global::System.Collections.Generic;
 
                 public static pbr::MessageDescriptor Descriptor
                 {
+                    get { return global::PokeGodar.WebAPI.GeneratedCode.Response.Descriptor.NestedTypes[1]; }
                 }
 
                 public pb::ByteString Unknown71
