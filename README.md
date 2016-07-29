@@ -21,6 +21,60 @@ This repo, when complete, will contain a sample full application (client and bac
 
 Real-time support is handled via websockets and SignalR for the purposes of demonstration. If you choose to use a backplane, you should be aware of latency or cost issues that might be incurred.
 
+### Current API Methods List
+
+#### Bot Utils
+
+- [ ] Farm Pokestops and Pokemon (Auto Play Enabled)
+
+#### Player Utils
+
+- [x] Get Profile
+- [x] Get Settings
+- [x] Get Best Ball
+- [x] Recycle Item
+- [x] Get Items
+- [x] Get Inventory
+- [x] Use Capture Items
+- [x] UseRazzBerry
+- [x] Use Item XP Boost
+- [ ] Update Player Location
+- [ ] Get Xp Differential
+- [ ] Get Total Pokemon
+- [ ] Get Total Experience
+- [ ] Get Current Level
+
+#### Pokemon Utils
+
+- [x] Catch Pokemon
+- [x] Encounter Pokemon
+- [x] Transfer Pokemon
+- [x] Evolve Pokemon
+- [ ] Evolve All Given Pokemon
+- [ ] Catch All Nearby Pokemon
+- [ ] Transfer All But Strongest Unwanted Pokemon
+- [ ] Transfer All Given Pokemon
+- [ ] Transfer Duplicate Pokemon
+- [ ] Transfer All Weak Pokemon
+- [ ] Calculate Perfect
+
+#### Map Utils
+
+- [ ] Get Map Objects
+
+#### Fort Utils
+
+- [x] Get Fort
+- [x] Search Fort
+
+#### Login Utils
+
+- [ ] Do Ptc Login
+- [ ] Do Google Login
+    - [ ] Do Google OAuth Login
+    - [ ] Get Access Token?
+
+
 <hr />
 
 ####If you looking for a fully-supported development framework for quickly launching mobile applications, inquire via e-mail: [sales@dryverless.com](mailto:sales@dryverless.com?Subject=Ahtau Sales). Ask for a license to use the Ahtau Framework.
