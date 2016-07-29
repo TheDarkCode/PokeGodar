@@ -479,6 +479,7 @@
     <Compile Include="Exceptions\GoogleOfflineException.cs" />
     <Compile Include="Exceptions\InvalidResponseException.cs" />
     <Compile Include="Exceptions\PtcOfflineException.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
     <Compile Include="Extensions\HttpClientExtensions.cs" />
     <Compile Include="Generated Code\AllEnum.cs" />
     <Compile Include="Generated Code\Payloads.cs" />
@@ -518,7 +519,7 @@
     <Compile Include="PartitionResolvers\TransitionHashPartitionResolver.cs" />
     <Compile Include="PartitionResolvers\TransitionReadMode.cs" />
     <Compile Include="PokemonGo\FortUtils.cs" />
-    <Compile Include="PokemonGo\ItemUtils.cs" />
+    <Compile Include="PokemonGo\MapUtils.cs" />
     <Compile Include="PokemonGo\PlayerUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />

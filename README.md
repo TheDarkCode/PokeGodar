@@ -60,7 +60,7 @@ Real-time support is handled via websockets and SignalR for the purposes of demo
 
 #### Map Utils
 
-- [ ] Get Map Objects
+- [x] Get Map Objects
 
 #### Fort Utils
 
