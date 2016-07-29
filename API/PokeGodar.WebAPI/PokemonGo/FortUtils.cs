@@ -9,18 +9,21 @@ using Google.Protobuf;
 using System.Threading.Tasks;
 using PokeGodar.WebAPI.Enums;
 using PokeGodar.WebAPI.Helpers;
+using PokeGodar.WebAPI.GeneratedCode;
+using AllEnum;
+using PokeGodar.WebAPI.Extensions;
 
 namespace PokeGodar.WebAPI.PokemonGo
 {
     public class FortUtils
     {
-        public async Task<FortDetailsResponse> GetFort(HttpClient client, string fortId, double fortLat, double fortLng)
+        public static async Task<FortDetailsResponse> GetFort(HttpClient client, string _apiUrl, string fortId, double fortLat, double fortLng, Request.Types.UnknownAuth _unknownAuth, double _currentLat, double _currentLng)
         {
             var customRequest = new Request.Types.FortDetailsRequest
             {
                 Id = ByteString.CopyFromUtf8(fortId),
-                Latitude = Extensions.FloatAsUlong(fortLat),
-                Longitude = Extensions.FloatAsUlong(fortLng)
+                Latitude = Helpers.Extensions.FloatAsUlong(fortLat),
+                Longitude = Helpers.Extensions.FloatAsUlong(fortLng)
             };
 
             var fortDetailRequest = RequestBuilder.GetRequest(_unknownAuth, _currentLat, _currentLng, 10,
@@ -35,15 +38,15 @@ namespace PokeGodar.WebAPI.PokemonGo
                         fortDetailRequest);
         }
 
-        public async Task<FortSearchResponse> SearchFort(HttpClient client, string fortId, double fortLat, double fortLng)
+        public static async Task<FortSearchResponse> SearchFort(HttpClient client, string _apiUrl, string fortId, double fortLat, double fortLng, Request.Types.UnknownAuth _unknownAuth, double _currentLat, double _currentLng)
         {
             var customRequest = new Request.Types.FortSearchRequest
             {
                 Id = ByteString.CopyFromUtf8(fortId),
-                FortLatDegrees = Extensions.FloatAsUlong(fortLat),
-                FortLngDegrees = Extensions.FloatAsUlong(fortLng),
-                PlayerLatDegrees = Extensions.FloatAsUlong(_currentLat),
-                PlayerLngDegrees = Extensions.FloatAsUlong(_currentLng)
+                FortLatDegrees = Helpers.Extensions.FloatAsUlong(fortLat),
+                FortLngDegrees = Helpers.Extensions.FloatAsUlong(fortLng),
+                PlayerLatDegrees = Helpers.Extensions.FloatAsUlong(_currentLat),
+                PlayerLngDegrees = Helpers.Extensions.FloatAsUlong(_currentLng)
             };
 
             var fortDetailRequest = RequestBuilder.GetRequest(_unknownAuth, _currentLat, _currentLng, 30,

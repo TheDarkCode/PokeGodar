@@ -12,7 +12,7 @@ using PokeGodar.WebAPI.Helpers;
 
 namespace PokeGodar.WebAPI.PokemonGo
 {
-    class ItemUtils
+    public class ItemUtils
     {
     }
 }

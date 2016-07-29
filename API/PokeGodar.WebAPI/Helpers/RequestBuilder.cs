@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PokeGodar.WebAPI.Enums;
+using AllEnum;
+using PokeGodar.WebAPI.GeneratedCode;
 
 namespace PokeGodar.WebAPI.Helpers
 {
@@ -14,7 +16,7 @@ namespace PokeGodar.WebAPI.Helpers
         {
             return new Request
             {
-                Altitude = Utils.FloatAsUlong(altitude),
+                Altitude = Extensions.FloatAsUlong(altitude),
                 Auth = new Request.Types.AuthInfo
                 {
                     Provider = authType == AuthType.Google ? "google" : "ptc",
@@ -24,8 +26,8 @@ namespace PokeGodar.WebAPI.Helpers
                         Unknown13 = 14
                     }
                 },
-                Latitude = Utils.FloatAsUlong(lat),
-                Longitude = Utils.FloatAsUlong(lng),
+                Latitude = Extensions.FloatAsUlong(lat),
+                Longitude = Extensions.FloatAsUlong(lng),
                 RpcId = 1469378659230941192,
                 Unknown1 = 2,
                 Unknown12 = 989, //Required otherwise we receive incompatible protocol
@@ -48,10 +50,10 @@ namespace PokeGodar.WebAPI.Helpers
         {
             return new Request
             {
-                Altitude = Utils.FloatAsUlong(altitude),
+                Altitude = Extensions.FloatAsUlong(altitude),
                 Unknownauth = unknownAuth,
-                Latitude = Utils.FloatAsUlong(lat),
-                Longitude = Utils.FloatAsUlong(lng),
+                Latitude = Extensions.FloatAsUlong(lat),
+                Longitude = Extensions.FloatAsUlong(lng),
                 RpcId = 1469378659230941192,
                 Unknown1 = 2,
                 Unknown12 = 989, //Required otherwise we receive incompatible protocol
