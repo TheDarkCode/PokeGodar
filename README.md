@@ -102,27 +102,6 @@ https://azure.microsoft.com/en-us/pricing/details/documentdb/
 ######Data Transfers Pricing Details
 https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 
-#####How User Data Appears on DocDB Server:
-```json
-{
-  "id": "463b5add-3abb-482c-8f72-9f199203e22b",
-  "UserName": "demo@github.com",
-  "Email": "demo@github.com",
-  "EmailConfirmed": true,
-  "PasswordHash": "AMZO39oQGu9eUtMcy8gho6oPxETXQ8OPmeju7JEVMeHW7LgQi/hcnEATX7294xfBKg==",
-  "SecurityStamp": "31a3e067-7508-41c4-acd5-d4311da67b2c",
-  "PhoneNumber": null,
-  "PhoneNumberConfirmed": false,
-  "TwoFactorEnabled": false,
-  "LockoutEnd": "0001-01-01T00:00:00+00:00",
-  "LockoutEnabled": false,
-  "AccessFailedCount": 0,
-  "Logins": [],
-  "Claims": [],
-  "Roles": []
-}
-```
-
 ##Related GitHub Projects / Credits
 
 ###pgoapi-swift by Luke Sapan
